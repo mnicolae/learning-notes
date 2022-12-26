@@ -29,6 +29,7 @@ If you are looking for an easy way to consume these notes, please check out [key
 * [The Phoenix Project: A Novel About IT, DevOps](books/the-phoenix-project.md) by **Gene Kim**, **Kevin Behr** and **George Spafford**, 2013.
 * [The Subtle Art of Not Giving a Fuck: A Counterintuitive Approach to Living a Good Life](books/the-subtle-art-of-not-giving-a-fuck.md) by **Mark Manson**, 2016.
 * [Understanding the Four Rules of Simple Design](books/understanding-the-four-rules-of-simple-design.md) by **Corey Haines**, 2014.
+* [Clean Code: A Handbook of Agile Software Craftsmanship](books/clean-code.md) by **Robert C. Martin**, 2008.
 
 If you are interested in the books I read, [follow me in Goodreads](https://www.goodreads.com/keyvanakbary).
 
