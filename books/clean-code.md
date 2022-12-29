@@ -18,6 +18,31 @@
     + [Use problem domain names](#use-problem-domain-names)
     + [Add meaningful context](#add-meaningful-context)
   * [Chapter 3: Functions](#chapter-3--functions)
+    + [Small!](#small-)
+    + [Blocks and indenting](#blocks-and-indenting)
+    + [Do One Thing](#do-one-thing)
+    + [One level of abstraction per function](#one-level-of-abstraction-per-function)
+    + [Reading Code from Top to Bottom](#reading-code-from-top-to-bottom)
+    + [Switch statements](#switch-statements)
+    + [Use descriptive names](#use-descriptive-names)
+    + [Function arguments.](#function-arguments)
+    + [Common monadic functions](#common-monadic-functions)
+    + [Flag arguments](#flag-arguments)
+    + [Dyadic functions.](#dyadic-functions)
+    + [Triads](#triads)
+    + [Argument objects](#argument-objects)
+    + [Argument lists](#argument-lists)
+    + [Verbs and keywords](#verbs-and-keywords)
+    + [Have No Side Effects.](#have-no-side-effects)
+    + [Output Arguments.](#output-arguments)
+    + [Command query separation](#command-query-separation)
+    + [Prefer Exceptions to Returning Error Codes](#prefer-exceptions-to-returning-error-codes)
+    + [Extract Try/Catch Blocks.](#extract-try-catch-blocks)
+    + [Error Handling Is One Thing.](#error-handling-is-one-thing)
+    + [The `Error.java` dependency magnet](#the--errorjava--dependency-magnet)
+    + [DRY (Don't Repeat Yourself)](#dry--don-t-repeat-yourself-)
+    + [Structured Programming](#structured-programming)
+    + [How do you write functions like this?](#how-do-you-write-functions-like-this-)
   * [Chapter 4: Comments](#chapter-4--comments)
   * [Chapter 5: Formatting](#chapter-5--formatting)
   * [Chapter 7: Error Handling](#chapter-7--error-handling)
@@ -109,31 +134,126 @@
 
 ## Chapter 3: Functions
 
-* Small!
+### Small!
+
+* Functions should not be 100 lines long and should hardly ever be 20 lines long.
+
+### Blocks and indenting
+
 * Blocks within if, else, while statements, and so on should be one line long.
 * The indent level of a function should not be greater than one or two.
-* Do one thing
-* One level of abstraction per function
-* Reading Code from Top to Bottom: The Stepdown rule.
-* Switch statements
-* Use descriptive names.
-* Function arguments. The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification and then shouldn’t be used anyway. Output arguments are harder to understand than input arguments.
-* Common monadic functions. Asking a question about the argument or transforming it into something else and returning it. Choose names that make the distinction clear. Event; overall program is meant to interpret the function call as an event and use the argument to alter the state of the system.
-* Flag arguments. Avoid.
-* Dyadic functions. Be aware that the come at a cost, and you should take advantage of what mechanisms are available to you to convert them into monads.
-* Argument objects.
-* Argument lists.
-* Verbs and keywords. Choosing good names for a function can go a long way towards explaining the intent of the function and intent of the arguments.
-* Have No Side Effects. Temporal coupling.
-* Output Arguments. Much of the need for output arguments disappears in OO languages because this is intended to act as an output argument.
-* Command query separation. Functions should either do something or answer something, but not both.
-* Prefer Exceptions to Returning Error Codes. When you return an error code, you create the problem that the caller must deal with error immediately. The benefit of using exceptions is that the error processing code can be separated from the happy path code and can be simplified.
-* Extract Try/Catch Blocks.
-* Error Handling Is One Thing.
-* The `Error.java` dependency magnet
-* DRY (Don't Repeat Yourself)
-* Structured Programming. Single-entry, single-exit rule. One return statement in a function, no break or continue statements in a loop.
-* How do you write functions like this? Writing software is like any other kind of writing (i.e., an incremental process)
+
+### Do One Thing
+
+* FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.
+
+### One level of abstraction per function
+
+* Like broken windows, once details are mixed with essential concepts, more and more details tend to accrete within the function.
+
+### Reading Code from Top to Bottom
+
+* The Stepdown rule.
+
+### Switch statements
+
+* Mention of polymorphism.
+* Mention of Single Responsibility Principle (SRP).
+* Mention of Open Closed Principle (OCP).
+* Mention of Abstract Factory.
+* Heuristic: switch statements can be tolerated if they appear only once, are used to create polymorphic objects, and are hidden behind an inheritance relationship so that the rest of the system can't see them.
+
+### Use descriptive names
+
+* Ward's principle: "You know you are working on clean code when each routine turns out to be pretty much what you expected."
+* How? 1. Small functions, 2. Do one thing, 3. Good names.
+* Long descriptive names over short enigmatic names.
+* Be consistent in your names. Use the same phrases, nouns, and verbs in the function names you choose for your modules.
+
+### Function arguments. 
+
+* The ideal number of arguments for a function is zero (niladic). 
+* Next comes one (monadic), followed closely by two (dyadic). 
+* Three arguments (triadic) should be avoided where possible. 
+* More than three (polyadic) requires very special justification, and then shouldn't be used anyway.
+* Arguments are hard from conceptual, testing points of view.
+* Mention of instance variable vs. input argument.
+* Output arguments are harder to understand than input arguments.
+
+### Common monadic functions
+
+* Asking a question about the argument, transforming it into something else and returning it. 
+* Choose names that make the distinction clear. 
+* Event; overall program is meant to interpret the function call as an event and use the argument to alter the state of the system. Use this form with care. Choose
+names and contexts carefully.
+* Avoid monadic functions that don't follow these forms.
+
+### Flag arguments
+
+* Avoid.
+
+### Dyadic functions. 
+
+* Be aware that the come at a cost, and you should take advantage of what mechanisms are available to you to convert them into monads.
+
+### Triads
+
+### Argument objects
+
+* When a function seems to need more than two or three arguments, it is likely that some of those arguments ought to be wrapped into a class of their own.
+
+### Argument lists
+
+### Verbs and keywords
+
+* Choosing good names for a function can go a long way towards explaining the intent of the function and intent of the arguments.
+* Example of `assertExpectedEqualsActual` over `assertEquals`.
+
+### Have No Side Effects. 
+
+* Mention of Temporal coupling.
+
+### Output Arguments. 
+
+* Much of the need for output arguments disappears in OO languages because `this` is intended to act as an output argument.
+* Output arguments should be avoided.
+
+### Command query separation
+
+* Functions should either do something or answer something, but not both.
+
+### Prefer Exceptions to Returning Error Codes
+
+* When you return an error code, you create the problem that the caller must deal with error immediately. 
+* The benefit of using exceptions is that the error processing code can be separated from the happy path code and can be simplified.
+
+### Extract Try/Catch Blocks.
+
+* Extract the bodies of the `try` and `catch` blocks out into functions of their own.
+
+### Error Handling Is One Thing.
+
+* A function that handles errors should do nothing else.
+
+### The `Error.java` dependency magnet
+
+* Fixed by using exceptions instead of error codes.
+
+### DRY (Don't Repeat Yourself)
+
+* Many principles and practices serve the practice of controlling or eliminating duplication.
+
+### Structured Programming
+
+* Single-entry, single-exit rule. 
+* One return statement in a function.
+* No break or continue statements in a loop.
+* Never, ever, any goto statements.
+* If you keep your functions small, the ocassional multiple `return`, `break`, or `continue` statement does no harm and can sometimes be more expressive than the single-entry, single-exit rule.
+
+### How do you write functions like this? 
+
+* Writing software is like any other kind of writing (i.e., an incremental process)
 
 ## Chapter 4: Comments
 
@@ -245,4 +365,4 @@
 ## Clean Boundaries
 
 * Manage 3rd party interfaces by having very few places in the code that refer to them.
-* Solutions/patterns: 1. encapsulate them, or 2. use an adapter to convert from perfect to provided interface.
+* Solutions/patterns: 1. encapsulate them, or 2. use an adapter to convert from perfect to provided interface.~~
