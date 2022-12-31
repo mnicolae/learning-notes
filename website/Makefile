@@ -16,7 +16,7 @@ MAKEFLAGS += --no-builtin-rules
 
 COMPOSE = docker-compose
 
-RUN_JEKYLL = $(COMPOSE) run -e JEKYLL_UID=$(shell id -u) -e JEKYLL_GID=$(shell id -g) jekyll
+RUN_JEKYLL = $(COMPOSE) run jekyll
 
 # Non file-generating targets
 .PHONY: build server update
