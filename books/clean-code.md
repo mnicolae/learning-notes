@@ -1,4 +1,4 @@
-  * [Chapter 2: Meaningful Names](#chapter-2--meaningful-names)
+  * [Meaningful Names](#meaningful-names)
     + [Use Intention-Revealing Names](#use-intention-revealing-names)
     + [Avoid disinformation](#avoid-disinformation)
     + [Make meaningful distinctions](#make-meaningful-distinctions)
@@ -17,7 +17,7 @@
     + [Use solution domain names](#use-solution-domain-names)
     + [Use problem domain names](#use-problem-domain-names)
     + [Add meaningful context](#add-meaningful-context)
-  * [Chapter 3: Functions](#chapter-3--functions)
+  * [Functions](#functions)
     + [Small!](#small-)
     + [Blocks and indenting](#blocks-and-indenting)
     + [Do One Thing](#do-one-thing)
@@ -43,9 +43,9 @@
     + [DRY (Don't Repeat Yourself)](#dry--don-t-repeat-yourself-)
     + [Structured Programming](#structured-programming)
     + [How do you write functions like this?](#how-do-you-write-functions-like-this-)
-  * [Chapter 4: Comments](#chapter-4--comments)
-  * [Chapter 5: Formatting](#chapter-5--formatting)
-  * [Chapter 7: Error Handling](#chapter-7--error-handling)
+  * [Comments](#comments)
+  * [Formatting](#formatting)
+  * [Error Handling](#error-handling)
   * [Use Exceptions Rather Than Return Codes](#use-exceptions-rather-than-return-codes)
     + [Write Your Try-Catch-Finally Statement First](#write-your-try-catch-finally-statement-first)
     + [Use Unchecked Exceptions](#use-unchecked-exceptions)
@@ -54,14 +54,14 @@
     + [Define the Normal Flow](#define-the-normal-flow)
     + [Don't Return Null](#don-t-return-null)
     + [Don't Pass Null](#don-t-pass-null)
-- [Chapter 8: Boundaries](#chapter-8--boundaries)
+- [Boundaries](#boundaries)
   * [Using Third-Party Code](#using-third-party-code)
   * [Exploring and learning boundaries](#exploring-and-learning-boundaries)
   * [Learning Tests Are Better Than Free](#learning-tests-are-better-than-free)
   * [Using Code That Does Not Yet Exist](#using-code-that-does-not-yet-exist)
   * [Clean Boundaries](#clean-boundaries)
 
-## Chapter 2: Meaningful Names
+## Meaningful Names
 
 ### Use Intention-Revealing Names
 
@@ -132,7 +132,7 @@
 
 * Shorter names are generally better than longer ones, so long as they are clear.
 
-## Chapter 3: Functions
+## Functions
 
 ### Small!
 
@@ -255,7 +255,7 @@ names and contexts carefully.
 
 * Writing software is like any other kind of writing (i.e., an incremental process)
 
-## Chapter 4: Comments
+## Comments
 
 * Comments are failures.
 * Programmers can't realistically maintain them.
@@ -273,7 +273,7 @@ names and contexts carefully.
 * TMI.
 * In-obvious Connection. The connection between a comment and the code it describes should be obvious.
 
-## Chapter 5: Formatting
+## Formatting
 
 * Vertical formatting. Small files are better than larger files.
 * Newspaper metaphor.
@@ -293,7 +293,7 @@ names and contexts carefully.
 * Dummy Scopes. 
 * Team Rules.
 
-## Chapter 7: Error Handling
+## Error Handling
 
 ## Use Exceptions Rather Than Return Codes
 
@@ -342,7 +342,7 @@ names and contexts carefully.
 * Guidance: avoid passing null in your code whenever possible.
 * No good way to deal with a null that is passed by a caller accidentally.
 
-# Chapter 8: Boundaries
+# Boundaries
 
 ## Using Third-Party Code
 
@@ -365,4 +365,4 @@ names and contexts carefully.
 ## Clean Boundaries
 
 * Manage 3rd party interfaces by having very few places in the code that refer to them.
-* Solutions/patterns: 1. encapsulate them, or 2. use an adapter to convert from perfect to provided interface.~~
+* Solutions/patterns: 1. encapsulate them, or 2. use an adapter to convert from perfect to provided interface.

@@ -2,7 +2,7 @@
 
 Taking notes on books I read, talks I watch, articles I study, and papers I love – recalling them right afterward by creating short summaries – helps a lot in my learning process. Here you'll find some of those little pieces.
 
-If you are looking for an easy way to consume these notes, please check out [keyvanakbary.github.io/learning-notes/](https://keyvanakbary.github.io/learning-notes/).
+If you are looking for an easy way to consume these notes, please check out [mnicolae.github.io/learning-notes/](https://mnicolae.github.io/learning-notes/).
 
 ### Books
 
@@ -31,8 +31,6 @@ If you are looking for an easy way to consume these notes, please check out [key
 * [The Subtle Art of Not Giving a Fuck: A Counterintuitive Approach to Living a Good Life](books/the-subtle-art-of-not-giving-a-fuck.md) by **Mark Manson**, 2016.
 * [Understanding the Four Rules of Simple Design](books/understanding-the-four-rules-of-simple-design.md) by **Corey Haines**, 2014.
 * [Clean Code: A Handbook of Agile Software Craftsmanship](books/clean-code.md) by **Robert C. Martin**, 2008.
-
-If you are interested in the books I read, [follow me in Goodreads](https://www.goodreads.com/keyvanakbary).
 
 ### Talks
 
