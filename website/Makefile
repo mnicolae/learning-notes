@@ -16,7 +16,7 @@ MAKEFLAGS += --no-builtin-rules
 
 COMPOSE = docker-compose
 
-RUN_JEKYLL = $(COMPOSE) run jekyll
+RUN_JEKYLL = $(COMPOSE) run -e JEKYLL_ROOTLESS=true jekyll
 
 # Non file-generating targets
 .PHONY: build server update
