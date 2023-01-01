@@ -4,7 +4,7 @@
     + [Make meaningful distinctions](#make-meaningful-distinctions)
     + [Use pronounceable names](#use-pronounceable-names)
     + [Use searchable names](#use-searchable-names)
-    + [Avoid encodings.](#avoid-encodings)
+    + [Avoid encodings](#avoid-encodings)
     + [Hungarian Notation](#hungarian-notation)
     + [Member prefixes.](#member-prefixes)
     + [Interfaces and Implementations](#interfaces-and-implementations)
@@ -44,6 +44,34 @@
     + [Structured Programming](#structured-programming)
     + [How do you write functions like this?](#how-do-you-write-functions-like-this-)
   * [Comments](#comments)
+    + [Comments Do Not Make Up for Bad Code](#comments-do-not-make-up-for-bad-code)
+    + [Explain Yourself in Code](#explain-yourself-in-code)
+    + [Good Comments](#good-comments)
+      - [Legal Comments](#legal-comments)
+      - [Informative Comments](#informative-comments)
+      - [Explanation of Intent](#explanation-of-intent)
+      - [Clarification](#clarification)
+      - [Warning of Consequences](#warning-of-consequences)
+      - [TODO Comments](#todo-comments)
+      - [Amplification](#amplification)
+    + [Bad Comments](#bad-comments)
+      - [Mumbling](#mumbling)
+      - [Redundant Comments](#redundant-comments)
+      - [Misleading Comments](#misleading-comments)
+      - [Mandated Comments](#mandated-comments)
+      - [Journal Comments](#journal-comments)
+      - [Noise Comments](#noise-comments)
+      - [Scary Noise](#scary-noise)
+    + [Don't Use a Comment When You can Use a Function or a Variable](#don-t-use-a-comment-when-you-can-use-a-function-or-a-variable)
+    + [Position Markers](#position-markers)
+    + [Closing Brace Comments](#closing-brace-comments)
+    + [Attributes and Bylines](#attributes-and-bylines)
+    + [Commented-Out Code](#commented-out-code)
+    + [HTML Comments](#html-comments)
+    + [Nonlocal Information](#nonlocal-information)
+    + [Too Much Information](#too-much-information)
+    + [Inobvious Connection](#inobvious-connection)
+    + [Function Headers](#function-headers)
   * [Formatting](#formatting)
   * [Error Handling](#error-handling)
   * [Use Exceptions Rather Than Return Codes](#use-exceptions-rather-than-return-codes)
@@ -69,6 +97,8 @@
 
 ### Avoid disinformation
 
+* Avoid words whose entrenched meanings vary from our intended meanings (i.e., `hp`, `aix`, etc.)
+
 ### Make meaningful distinctions
 
 * Mention of noise words (i.e., `a`, `an`, `the`, etc.)
@@ -82,7 +112,7 @@
 * Longer names trump shorter names, and any searchable name trumps a constant in code.
 * Single-letter names can ONLY be used as local variables inside short methods. The length of a name should correspond to the size of its scope.
 
-### Avoid encodings. 
+### Avoid encodings
 
 * Encoded names are seldom pronounceable and are easy to mis-type.
 
@@ -194,7 +224,7 @@ names and contexts carefully.
 
 ### Dyadic functions. 
 
-* Be aware that the come at a cost, and you should take advantage of what mechanisms are available to you to convert them into monads.
+* Be aware that they come at a cost, and you should take advantage of what mechanisms are available to you to convert them into monads.
 
 ### Triads
 
@@ -257,21 +287,122 @@ names and contexts carefully.
 
 ## Comments
 
-* Comments are failures.
-* Programmers can't realistically maintain them.
-* Comments Do Not Make Up for Bad Code.
-* Explain Yourself in Code.
-* Good Comments: Legal Comments, Informative Comments, Explanation of Intent, Clarification, Warning of Consequences, TODO, Amplification, Javadocs in Public APIs
-* Bad Comments: Mumbling, Redundant Comments, Misleading Comments, Mandated Comments, Journal Comments, Noise Comments, Scary Noise.
-* Don't Use a Comment When You can Use a Function or a Variable.
-* Position Markers. Refrain from using.
-* Closing Brace Comments. Try to shorten functions instead.
-* Attributes and Bylines. Refrain from using, source control system is better at that.
-* Commented-Out Code. Don't do this!
-* HTML Comments. Abomination.
-* Nonlocal Information. If you must write a comment, then make sure it describes the code it appears near.
-* TMI.
-* In-obvious Connection. The connection between a comment and the code it describes should be obvious.
+* Comments are always failures.
+* Why? Because they lie. Not always, not intentionally, but too often. Programmers can't realistically maintain them.
+
+### Comments Do Not Make Up for Bad Code
+
+* Clear and expressive code with few comments is far superior to cluttered and complex code with lots of comments.
+
+### Explain Yourself in Code
+
+* Example of using self-explaining class method.
+
+### Good Comments
+
+#### Legal Comments
+
+* Where possible, refer to a standard license or external document rather than putting all the terms and conditions into the comment.
+
+#### Informative Comments
+
+* Example alternative of self-explaining class method.
+* Example alternative of special class that converts the formats of dates and times.
+
+#### Explanation of Intent
+
+* Provides the intent behind a decision.
+* Example of comment explaining intent to get race condition.
+
+#### Clarification
+
+* Translate the meaning of some obscure argument or return value into something that's readable.
+
+#### Warning of Consequences
+
+* Example of warning about function not being thread safe.
+
+#### TODO Comments
+
+* Jobs that the programmer thinks should be done, but for some reason can't do at the moment.
+* Not an excuse to leave bad code in the system.
+* Scan through them regularly and eliminate the ones you can.
+
+#### Amplification
+
+* Amplify the importance of something that may otherwise seem inconsequential.
+
+### Bad Comments
+
+#### Mumbling
+
+* If you decide to write a comment, make sure it is the best comment you can write.
+* Any comment that forces you to look in another module for the meaning of that comment has failed to communicate to you.
+
+#### Redundant Comments
+
+* Not more informative and less precise than the code.
+* Does not justify the code, or provide intent or rationale.
+* Not easier to read than the code.
+
+#### Misleading Comments
+
+* Statements in comments that are not precise enough to be accurate.
+
+#### Mandated Comments
+
+* Abolish rules that enforce mandated comments.
+
+#### Journal Comments
+
+* Should be removed. We have source control systems that make them obsolete.
+
+#### Noise Comments
+
+* Restate the obvious and provide no new information.
+* Replace temptation to create noise with determination to clean your code.
+
+#### Scary Noise
+
+* Javadocs example.
+
+### Don't Use a Comment When You can Use a Function or a Variable
+
+### Position Markers
+
+* Refrain from using.
+
+### Closing Brace Comments
+
+* Try to shorten functions instead.
+
+### Attributes and Bylines
+
+* Refrain from using, source control system is better at that.
+
+### Commented-Out Code
+
+* Don't do this!
+
+### HTML Comments
+
+* Abomination.
+
+### Nonlocal Information
+
+* If you must write a comment, then make sure it describes the code it appears near.
+
+### Too Much Information
+
+* Don't put interesting historical discussions or irrelevant descriptions of details into comments.
+
+### Inobvious Connection
+
+* The connection between a comment and the code it describes should be obvious.
+
+### Function Headers
+
+* A well-chose name for a small function that does one thing is usually better than a comment header.
 
 ## Formatting
 
