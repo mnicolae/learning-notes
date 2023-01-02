@@ -73,6 +73,16 @@
     + [Inobvious Connection](#inobvious-connection)
     + [Function Headers](#function-headers)
   * [Formatting](#formatting)
+    + [The Purpose of Formatting](#the-purpose-of-formatting)
+    + [Vertical formatting](#vertical-formatting)
+    + [Vertical openness between concepts](#vertical-openness-between-concepts)
+    + [Vertical density](#vertical-density)
+    + [Vertical distance](#vertical-distance)
+    + [Horizontal formatting.](#horizontal-formatting)
+    + [Horizontal Openness and Density](#horizontal-openness-and-density)
+    + [Horizontal Alignment](#horizontal-alignment)
+    + [Indentation](#indentation)
+    + [Team Rules](#team-rules)
   * [Error Handling](#error-handling)
   * [Use Exceptions Rather Than Return Codes](#use-exceptions-rather-than-return-codes)
     + [Write Your Try-Catch-Finally Statement First](#write-your-try-catch-finally-statement-first)
@@ -406,23 +416,56 @@ names and contexts carefully.
 
 ## Formatting
 
-* Vertical formatting. Small files are better than larger files.
-* Newspaper metaphor.
-* Vertical openness between concepts. Each group of lines represent a thought and should be separate from each other with blank lines.
-* Vertical density.
-* Vertical distance. Concepts that are closely related should be kept vertically close to each other.
-* Variable declarations. Variables should be declared as closed to their usage as possible.
-* Instance variables. Should be declared at the top of the class.
-* Dependent functions. If one function calls another, they should be vertically close, and the caller should be above the callee, if at all possible.
-* Conceptual affinity.
-* Vertical ordering. A function that is called should be below a function that does the calling.
-* Horizontal formatting. Strive to keep lines short.
-* Horizontal Openness and Density.
-* Horizontal Alignment.
-* Indentation.
-* Breaking Indentation. TL;DR don't.
-* Dummy Scopes. 
-* Team Rules.
+### The Purpose of Formatting
+
+* Code formatting is about communication, and communication is the professional developer's first order of business.
+
+### Vertical formatting
+
+* Small files are usually easier to understand than large files are.
+* The Newspaper metaphor.
+
+### Vertical openness between concepts
+
+* Nearly all code is read left to right and top to bottom.
+* Each line represents an expression or a clause.
+* Each group of lines represents a complete thought. Those thoughts should be separated from each other with blank lines.
+
+### Vertical density
+
+* Lines of code that are tightly related should appear vertically dense.
+
+### Vertical distance
+
+* Concepts that are closely related should be kept vertically close to each other.
+* *Variable declarations*. Variables should be declared as closed to their usage as possible.
+* *Instance variables*. Should be declared at the top of the class.
+* *Dependent functions.* If one function calls another, they should be vertically close, and the caller should be above the callee, if at all possible.
+* *Conceptual affinity.* The stronger the conceptual affinity between bits of code, the less vertical distance there should be between them.
+* *Vertical ordering.* A function that is called should be below a function that does the calling.
+ 
+### Horizontal formatting. 
+
+* Strive to keep lines short (120 characters).
+
+### Horizontal Openness and Density
+
+* Use horizontal white space to associate things that are strongly related and disassociate things that are more weakly related.
+* Examples: assignment operators, function names and the opening parenthesis, precedence of operators.
+
+### Horizontal Alignment
+
+* Prefer unaligned declarations and assignments.
+* If there are long lists that need to be aligned, the problem is the length of the lists, not the lack of alignment.
+
+### Indentation
+
+* *Breaking Indentation.* TL;DR don't.
+* *Dummy Scopes.* Avoid.
+
+### Team Rules
+
+* A team of engineers should agree upon a single formatting style, and then every member of that team should use that style.
 
 ## Error Handling
 
