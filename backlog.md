@@ -1,5 +1,9 @@
 # Backlog
 
+## Books
+
+* [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book?utm_source=substack&utm_medium=email)
+
 ## Articles
 
 * [Positive and Negative Liberty](https://plato.stanford.edu/entries/liberty-positive-negative/#ParPosLib)
