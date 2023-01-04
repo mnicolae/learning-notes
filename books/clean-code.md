@@ -83,6 +83,15 @@
     + [Horizontal Alignment](#horizontal-alignment)
     + [Indentation](#indentation)
     + [Team Rules](#team-rules)
+  * [Objects and Data Structures](#objects-and-data-structures)
+    + [Data Abstraction](#data-abstraction)
+    + [Data/Object Anti-Symmetry](#data-object-anti-symmetry)
+    + [The Law of Demeter](#the-law-of-demeter)
+    + [Train Wrecks](#train-wrecks)
+    + [Hybrids](#hybrids)
+    + [Hiding structure](#hiding-structure)
+    + [Data Transfer Objects](#data-transfer-objects)
+    + [Active Record](#active-record)
   * [Error Handling](#error-handling)
   * [Use Exceptions Rather Than Return Codes](#use-exceptions-rather-than-return-codes)
     + [Write Your Try-Catch-Finally Statement First](#write-your-try-catch-finally-statement-first)
@@ -466,6 +475,56 @@ names and contexts carefully.
 ### Team Rules
 
 * A team of engineers should agree upon a single formatting style, and then every member of that team should use that style.
+
+## Objects and Data Structures
+
+### Data Abstraction
+
+* A class exposes abstract interfaces that allow its users to manipulate the essence of the data, without having to know its implementation.
+* Examples of Point class and Vehicle interface.
+
+### Data/Object Anti-Symmetry
+
+* Objects hid their data behind abstractions and expose functions that operate on that data. Expose behavior, hide data.
+* Data structures expose their data and have no meaningful functions.
+* Example of Geometry class.
+* Example of polymorphic shape classes.
+* Procedural code: easy to add new functions, hard to add new data structures.
+* OO code: easy to add new classes, hard to add new functions.
+* Heuristic: whether we want to add new data types or we want to add new functions informs the decision of whether to use procedural or OO code.
+
+### The Law of Demeter
+
+* A method `m` of an object `a` may only invoke the methods of the following kinds of objects: `a` itself, `m`'s parameters, any objects instantiated within `m`, `a`'s attributes, global variables accessible by `a` in the scope of `m`.
+* Specific case of loose coupling.
+
+### Train Wrecks
+
+* Chains of calls are generally considered to be sloppy style should be avoided.
+* Discussion on whether example block violates the Law of Demeter.
+
+### Hybrids
+
+* Hybrid structures that are half objects and half data structures.
+* Avoid creating them because they are the worst of both worlds.
+
+### Hiding structure
+
+* If working with an object, we should be telling it to do *something*.
+
+### Data Transfer Objects
+
+* Quintessential form of a data structure: a class with public variables and no functions.
+* Data transfer object, DTO.
+* Beans are examples of DTOs.
+* `Address` class example.
+
+### Active Record
+
+* Special forms of DTOs.
+* Data structures with public (or bean-accessed) variables; but they typically have navigational methods like `save` and `find`.
+* Usually direct translations from database tables, or other data sources.
+* Treat them as data structures.
 
 ## Error Handling
 
