@@ -116,6 +116,15 @@
   * [One Assert per Test](#one-assert-per-test)
   * [Single Concept per Test](#single-concept-per-test)
   * [F.I.R.S.T](#first)
+- [Classes](#classes)
+  * [Class organization](#class-organization)
+  * [Encapsulation](#encapsulation)
+  * [Classes Should Be Small!](#classes-should-be-small-)
+  * [The Single Responsibility Principle](#the-single-responsibility-principle)
+  * [Cohesion](#cohesion)
+  * [Maintaining Cohesion Results in Many Small Classes](#maintaining-cohesion-results-in-many-small-classes)
+  * [Organizing for Change](#organizing-for-change)
+  * [Isolating from Change](#isolating-from-change)
 
 # Meaningful Names
 
@@ -650,3 +659,47 @@ names and contexts carefully.
 ## F.I.R.S.T
 
 * Fast. Independent. Repeatable. Self-Validating. Timely. 
+
+# Classes
+
+## Class organization
+
+* Order: public static constants, private static variables, private instance variables, public functions, private utilities.
+* Follow stepdown rule.
+
+## Encapsulation
+
+* Loosening encapsulation (i.e., making variables and utility functions non-private) is always a last resort.
+
+## Classes Should Be Small!
+
+* Count number of responsibilities.
+* The name of a class should describe what responsibilities it fulfills.
+
+## The Single Responsibility Principle
+
+* A class or module should have one, and only one, reason to change.
+* Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code.
+* We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors.
+
+## Cohesion
+
+* The more variables a method manipulates the more cohesive that method is to its class.
+* We would like cohesion to be high.
+
+## Maintaining Cohesion Results in Many Small Classes
+
+* When classes lose cohesion, split them.
+* Breaking a large function into many smaller functions often gives opportunity to split several smaller classes out as well.
+* `PrintPrimes` program example.
+
+## Organizing for Change
+
+* Mention of OCP (Open-Closed Principle: Open for extension but closed for modification).
+* Structure systems so that we muck with as little as possible when we update them with new or changed features.
+
+## Isolating from Change
+
+* Mention of DIP (Dependency Inversion Principle).
+* Our classes should depend upon abstractions, not on concrete details.
+
