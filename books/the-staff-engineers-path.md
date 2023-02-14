@@ -39,9 +39,9 @@
 ## Why Do We Need Engineers Who Can See the Big Picture?
 
 * Good decisions need *context*.
-* The local maximum problem. Solved with decision makers (influencers) who can take an outside view; consider the goals of multiple teams at once and choose a path that's best for the whole org or business.
+* The local maximum problem. Solved with decision makers (or decision influencers) who can take an outside view; consider the goals of multiple teams at once and choose a path that's best for the whole org or the whole business.
 * Need to also anticipate how the decision will play out in the future (i.e., forward-looking decisions).
-* Managers and CTO may not be best-fitted to be such decision makers.
+* Managers and CTO may not be best-fitted to be such decision makers because management authority can overshadow technical judgement and managing others is a full-time job.
 
 ## Why Do We Need Engineers Who Lead Projects That Cross Multiple Teams?
 
@@ -57,7 +57,7 @@
 ## You're Not a Manager, but You are a Leader
 
 * Staff engineering is a leadership role.
-* Project that can't succeed without collaboration, communication, and alignment.
+* Projects that can't succeed without collaboration, communication, and alignment.
 * Reference [Kind Engineering](https://kind.engineering/).
 
 ## You're in a "Technical" Role
@@ -67,6 +67,7 @@
 ## You Aim to Be Autonomous
 
 * Your manager brings you information and shares context, but you should be telling them what's important just as much as the other way around.
+* Reference [So You're Staff+ ... Now What?](https://leaddev.com/leaddev-live/so-youre-staff-now-what).
 
 ## You Set Technical Direction
 
@@ -89,6 +90,7 @@
 * Manager will have more time, more likely to be an advocate, but less experienced.
 * May find it hard to influence the org.
 * Info will be filtered, centered on the problems of the specific team.
+* Reference [When your manager isn't supporting you, build a voltron](https://larahogan.me/blog/manager-voltron/)
 
 ## What's Your Scope?
 
@@ -117,6 +119,7 @@
 
 ### Which of the "four disciplines" do you gravitate toward?
 
+* Reference [Role and Influence: The IC trajectory beyond Staff](https://leaddev.com/leaddev-live/role-and-influence-ic-trajectory-beyond-staff).
 * Core technical skills
 * Product management
 * Project management
@@ -137,7 +140,7 @@
 
 ### Do any of these archetypes fit you?
 
-* Staff Archetypes: https://staffeng.com/guides/staff-archetypes
+* Reference [Staff Archetypes](https://staffeng.com/guides/staff-archetypes)
 * Tech leads
 * Architects
 * Solvers
