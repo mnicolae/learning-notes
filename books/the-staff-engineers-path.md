@@ -163,3 +163,114 @@
 ## Is That Your Job?
 
 * Your job is to make your organization successful (i.e., achieve its goals).
+
+# Three Maps
+
+* Locator map, topographical map, treasure map.
+
+## Locator map
+
+* Risks: prioritizing badly, losing empathy, tuning out the background noise (i.e., boiling frog), forgetting what the work is for.
+
+### Seeing bigger
+
+* Taking an outsider view
+* Escaping the echo chamber. Seek out peers in other groups and build relationship with other roles (product, customer support, etc.)
+* What's actually important?
+* What do your customers care about? Reference to [No User Left Behind: Making Sure Customers Reach Your Service](https://www.usenix.org/conference/lisa16/conference-program/presentation/suley)
+* Have your problems been solved before? Take the time to understand what already exists before building something new.
+
+## Topographical Map
+
+### Rought Terrain
+
+* Your good ideas don't get traction
+* You don't find out about the difficult parts until you get there
+* Everything takes longer
+
+### Understanding Your Organization
+
+#### What's the culture?
+
+* Statement of values or principles are aspirational.
+* The real values of the company are reflected in what actually happens every day.
+* Secret or open?
+* Oral or written?
+* Top-down or bottom-up?
+* Fast change or deliberate change? Tied to written and oral culture.
+* Back channels or front doors?
+* Allocated or available?
+* Liquid or crystallized? Mention of projects earmarked for promotion and ruffling feathers.
+
+#### Power, rules, or mission?
+
+* Reference to [A typology of organisational cultures](https://qualitysafety.bmj.com/content/13/suppl_2/ii22.short)
+* Pathological: preoccupation with personal power, needs, and glory
+* Bureaucratic: preoccupation with rules, positions, and departamental turf
+* Generative: concentration of the mission itself
+* Good practices: blameless postmortems, encouraging experimentation, taking calculated risks, breaking down silos.
+
+#### Noticing the points of interest
+
+* Chasms
+* Fortresses
+* Disputed territory
+* Uncrossable deserts
+* Paved roads, shortcuts, and long ways around
+
+### What Points of Interest Are on Your Map?
+
+#### How are decisions made?
+
+#### Where is "the room"?
+
+* Ask someone you trust to walk you through where a particular decision came from.
+
+#### Asking to join in
+
+* Show how including you will make your organization better at achieving its goals.
+* Reference to [Getting in the Room](https://lethain.com/getting-in-the-room/).
+
+#### The shadow org chart
+
+* Reference to [Debugging Teams](https://book.debuggingteams.com/#manipulating_your_organization)
+
+### Keeping Your Topographic Map Up to Date
+
+* Automated announcement lists and channels
+* Walking the floor
+* Lurking
+* Making time for reading
+* Checking in with your leadership
+* Talking with people
+
+### If the Terrain Is Still Difficult to Navigate, Be a Bridge
+
+## The Treasure Map
+
+### Chasing Shiny Things
+
+* It'll be harder to keep everyone going in the same direction
+* You won't finish big things
+* You'll accumulate cruft
+* You'll have competing initiatives
+* Engineers stop growing
+
+### Taking a Longer View
+
+#### Why are you doing whatever you're doing?
+
+* Civilization video game analogy.
+
+#### Sharing the map
+
+* Where we are, where we're going, why we're taking the steps that we are along the way.
+
+### If the Treasure Map Is Still Unclear, It Might Be Time to Draw a New One
+
+## Your Personal Journey
+
+* As a staff engineer, it can take longer to see the impact of your work.
+* Looking back, you should have a narrative of what you were trying to achieve and how it went.
+* Looking ahead, you should have a story of what you are trying to do.
+* Trail map coming up in Chapter 9.
