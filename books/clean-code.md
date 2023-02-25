@@ -703,3 +703,61 @@ names and contexts carefully.
 * Mention of DIP (Dependency Inversion Principle).
 * Our classes should depend upon abstractions, not on concrete details.
 
+# Systems
+
+## Separate Constructing a System from Using It
+
+* Mention of Lazy Initialization/Evaluation idiom.
+
+## Separation of Main
+
+* The `main` function builds the objects necessary for the system, then passes them to the application, which simply uses them.
+
+### Factories
+
+* Abstract factory pattern.
+
+### Dependency Injection
+
+* Dependency Injection (DI) is a mechanism to separate construction from use.
+* It is the application of Inversion of Control (IoC) to dependency management; an object should not take responsibility for instantiating dependencies itself. Instead, it should pass this responsibility to another "authoritative" mechanism, thereby inverting the control.
+* Spring Framework provides the best known DI container for Java.
+
+## Scaling Up
+
+### Cross-Cutting Concerns
+
+* Examples: persistence, security, transactions, caching, failover.
+* Mention of Aspect-Oriented programming (AOP). Modular constructs called aspects specify which points in the system should have their behavior modified in some consistent way to support a particular concern.
+
+## Java Proxies
+
+* Interface `Bank`, wrapped by the proxy, and a Plain-Old Java Object (POJO), `BankImpl`, that implements the business logic.
+* Proxy API requires `InvocationHandler` object. `BankProxyHandler` uses the Java reflection API to map the generic method invocations to the corresponding methods in `BankImpl`, and so on.
+
+## Pure Java AOP Frameworks
+
+* Spring AOP, JBoss AOP.
+* Each "bean" is like one part of a nested "Russian doll".
+* Mention of data accessor object (DAO).
+* Mention of nested decorators.
+
+## AspectJ Aspects
+
+* AspectJ language, an extension of Java that provides "first-class" support for aspects.
+
+## Test Drive the System Architecture
+
+* Ideal of writing application's domain logic using POJOs, decoupled from any architecture concerns at the code level.
+* Mention of Big Design Up Front (BDUF).
+
+## Optimize Decision-Making
+
+* Modularity and separation of concerns make decentralized management and decision-making possible.
+* It is best to postpone decisions until the last possible moment.
+
+## Use Standards Wisely, When They Add Demonstrable Value
+
+## Systems Need Domain-Specific Languages
+
+* Mention of Domain-Specific Languages (DSLs).
