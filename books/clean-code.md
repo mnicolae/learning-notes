@@ -125,6 +125,25 @@
   * [Maintaining Cohesion Results in Many Small Classes](#maintaining-cohesion-results-in-many-small-classes)
   * [Organizing for Change](#organizing-for-change)
   * [Isolating from Change](#isolating-from-change)
+- [Systems](#systems)
+  * [Separate Constructing a System from Using It](#separate-constructing-a-system-from-using-it)
+  * [Separation of Main](#separation-of-main)
+    + [Factories](#factories)
+    + [Dependency Injection](#dependency-injection)
+  * [Scaling Up](#scaling-up)
+    + [Cross-Cutting Concerns](#cross-cutting-concerns)
+  * [Java Proxies](#java-proxies)
+  * [Pure Java AOP Frameworks](#pure-java-aop-frameworks)
+  * [AspectJ Aspects](#aspectj-aspects)
+  * [Test Drive the System Architecture](#test-drive-the-system-architecture)
+  * [Optimize Decision-Making](#optimize-decision-making)
+  * [Use Standards Wisely, When They Add Demonstrable Value](#use-standards-wisely--when-they-add-demonstrable-value)
+  * [Systems Need Domain-Specific Languages](#systems-need-domain-specific-languages)
+- [Emergence](#emergence)
+  * [Design Rule 1 - Runs All The Tests](#design-rule-1---runs-all-the-tests)
+  * [Design Rule 2 - No Duplication](#design-rule-2---no-duplication)
+  * [Design Rule 3 - Expressive](#design-rule-3---expressive)
+  * [Design Rule 4 - Minimal Classes and Methods](#design-rule-4---minimal-classes-and-methods)
 
 # Meaningful Names
 
@@ -761,3 +780,23 @@ names and contexts carefully.
 ## Systems Need Domain-Specific Languages
 
 * Mention of Domain-Specific Languages (DSLs).
+
+# Emergence
+
+## Design Rule 1 - Runs All The Tests
+
+* A design must produce a system that acts as intended.
+* A system that is comprehensibly tested and passes all of its tests all the time is a testable system.
+
+## Design Rule 2 - No Duplication
+
+* Duplication is the primary enemy of a well-designed system; additional work, risk, and unnecessary complexity.
+* Mention of TEMPLATE METHOD pattern.
+
+## Design Rule 3 - Expressive
+
+* The majority of the cost of a software project is in long-term maintenance.
+
+## Design Rule 4 - Minimal Classes and Methods
+
+* Keep overall system small while also keeping functions and class small.
