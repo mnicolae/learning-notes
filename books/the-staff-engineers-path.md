@@ -26,6 +26,64 @@
     + [What needs you?](#what-needs-you-)
   * [Aligning on Scope, Shape, and Primary Focus](#aligning-on-scope--shape--and-primary-focus)
   * [Is That Your Job?](#is-that-your-job-)
+- [Three Maps](#three-maps)
+  * [Locator map](#locator-map)
+    + [Seeing bigger](#seeing-bigger)
+  * [Topographical Map](#topographical-map)
+    + [Rought Terrain](#rought-terrain)
+    + [Understanding Your Organization](#understanding-your-organization)
+      - [What's the culture?](#what-s-the-culture-)
+      - [Power, rules, or mission?](#power--rules--or-mission-)
+      - [Noticing the points of interest](#noticing-the-points-of-interest)
+    + [What Points of Interest Are on Your Map?](#what-points-of-interest-are-on-your-map-)
+      - [How are decisions made?](#how-are-decisions-made-)
+      - [Where is "the room"?](#where-is--the-room--)
+      - [Asking to join in](#asking-to-join-in)
+      - [The shadow org chart](#the-shadow-org-chart)
+    + [Keeping Your Topographic Map Up to Date](#keeping-your-topographic-map-up-to-date)
+    + [If the Terrain Is Still Difficult to Navigate, Be a Bridge](#if-the-terrain-is-still-difficult-to-navigate--be-a-bridge)
+  * [The Treasure Map](#the-treasure-map)
+    + [Chasing Shiny Things](#chasing-shiny-things)
+    + [Taking a Longer View](#taking-a-longer-view)
+      - [Why are you doing whatever you're doing?](#why-are-you-doing-whatever-you-re-doing-)
+      - [Sharing the map](#sharing-the-map)
+    + [If the Treasure Map Is Still Unclear, It Might Be Time to Draw a New One](#if-the-treasure-map-is-still-unclear--it-might-be-time-to-draw-a-new-one)
+  * [Your Personal Journey](#your-personal-journey)
+- [Creating the Big Picture](#creating-the-big-picture)
+  * [What's a Vision? What's a Strategy?](#what-s-a-vision--what-s-a-strategy-)
+    + [What's a Technical Vision?](#what-s-a-technical-vision-)
+    + [What's a Technical Strategy?](#what-s-a-technical-strategy-)
+      - [The diagnosis](#the-diagnosis)
+      - [Guiding policy](#guiding-policy)
+      - [Coherent actions](#coherent-actions)
+    + [Do You Really Need Vision and Strategy Documents?](#do-you-really-need-vision-and-strategy-documents-)
+  * [The Approach](#the-approach)
+    + [Embrace the Boring Ideas](#embrace-the-boring-ideas)
+    + [Join an Expedition in Progress](#join-an-expedition-in-progress)
+    + [Get a Sponsor](#get-a-sponsor)
+    + [Choose Your Core Group](#choose-your-core-group)
+    + [Set Scope](#set-scope)
+    + [Make Sure It's Achievable](#make-sure-it-s-achievable)
+    + [Make It Official](#make-it-official)
+  * [The Writing](#the-writing)
+    + [The Writing Loop](#the-writing-loop)
+      - [Initial Ideas](#initial-ideas)
+      - [Writing](#writing)
+      - [Interviews](#interviews)
+      - [Thinking](#thinking)
+    + [Make Decisions](#make-decisions)
+      - [Trade-offs](#trade-offs)
+      - [Building consensus](#building-consensus)
+      - [Not deciding is a decision (just usually not a good one)](#not-deciding-is-a-decision--just-usually-not-a-good-one-)
+      - [Show your work](#show-your-work)
+    + [Get Aligned and Stay Aligned](#get-aligned-and-stay-aligned)
+      - [Be Reasonable](#be-reasonable)
+      - [Nemawashi](#nemawashi)
+      - [Work on your story](#work-on-your-story)
+    + [Create the Final Draft](#create-the-final-draft)
+  * [The Launch](#the-launch)
+    + [Make It Official](#make-it-official-1)
+    + [Keep It Fresh](#keep-it-fresh)
 
 # What Would You Say You Do Here?
 
@@ -274,3 +332,166 @@
 * Looking back, you should have a narrative of what you were trying to achieve and how it went.
 * Looking ahead, you should have a story of what you are trying to do.
 * Trail map coming up in Chapter 9.
+
+# Creating the Big Picture
+
+## What's a Vision? What's a Strategy?
+
+* "tragedy of the commons", another idiom for local maximum
+
+### What's a Technical Vision?
+
+* A technical vision describes the future as you'd like it to be once the objectives have been achieved and the biggest problems are solved.
+* Also called a "north star".
+* If you could wave a magic wand and be done, what would your architecture, processes, teams, culture, or capabilities be? That's your vision.
+
+### What's a Technical Strategy?
+
+* A strategy is a plan of action. It's how you intend to achieve your goals, navigating past the obstacles you'll meet along the way.
+* It should bring clarity -- not about the destination, but about the path there.
+* At it's kernel, it is a diagnosis of the problems, a guiding policy, and actions that will bypass the challenges.
+
+#### The diagnosis
+
+* Find patterns in the noise or using metaphors or mental models to make the problem easy to understand.
+* This is difficult. It will take time.
+
+#### Guiding policy
+
+* The guiding policy is your approach to bypassing the obstacles described in the diagnosis.
+
+#### Coherent actions
+
+* Once you've got a diagnosis and guiding policy, you can get specific about the actions you're going to take and the ones you won't.
+* A strategy should draw on your advantages.
+* A strategy that can't get staffed in your organization is a waste of time.
+
+### Do You Really Need Vision and Strategy Documents?
+
+* If it's easy to describe the state that you're trying to get to or the problem you're trying to solve, what you actually want might be more like the goals section of a design document, or even the description of a pull request.
+* Writing technical vision or strategy takes time. If you can achieve the same outcome in a more lightweight way, do that instead.
+
+## The Approach
+
+* There will be a ton of preparation, then a ton of iteration and alignment.
+* The agreeement is the work.
+* Mention of technology radar.
+
+### Embrace the Boring Ideas
+
+* Be prepared for your work to involve existing ideas, not brand-new ones.
+* Someone who's willing to weight up all the possible solutions, make the case for what to do and not do, align everyone, and be brave enough to make the (potentially wrong) decisions.
+
+### Join an Expedition in Progress
+
+* Share the lead
+* Follow their lead
+* Step away
+
+### Get a Sponsor
+
+* A sponsor needs the power to decide what an organization spends time and staffing on, and such decisions are usually up to the local director or VP.
+* A sponsor helps clarify and justify the work, adds hierarchy to groups that would otherwise get stuck at attempting consensus, set success criteria and act as a tiebreaker when decisions are stuck in committee.
+* Mention of "objectives that are always true".
+
+### Choose Your Core Group
+
+* Working with other people gives you accountability.
+* Aim to recruit a small core group (2-4 people) to help you create the document, as well as a broader group of general allies and supporters.
+* Outside of the core team, you can offer more lightweight involvement: you'll interview them, try to represent their point of view in your work, and let them review early drafts.
+* Lead vs. first among equals.
+
+### Set Scope
+
+* Consider how much the problems you are trying to solve sprawl across the organization.
+
+### Make Sure It's Achievable
+
+* Talk with someone who's done something similar before.
+
+### Make It Official
+
+Checklist:
+* We need this.
+* I know the solution will be boring and obvious.
+* There isn't an existing effort (or I've joined it).
+* There's organizational support.
+* We agree on what we're creating.
+* The problem is solvable (by me).
+* I'm not lying to myself on any of the above.
+
+## The Writing
+
+### The Writing Loop
+
+* Timebox this work and give yourself some deadlines.
+* If you've set up milestones, use them as a reminder to stop iterating and wrap up.
+
+#### Initial Ideas
+
+* What documents already exist? "Inherit" any constraints they've set.
+* What needs to change? Mention of "architectural characteristics".
+* What's great as it is?
+* What's important?
+* What will Future You wish that Present You had done?
+
+#### Writing
+
+* Have the leader write a first draft for discussion.
+* Aggregate multiple first drafts.
+
+#### Interviews
+
+* Put your preconceptions aside and talk to people. Lots of people.
+
+#### Thinking
+
+* Give yourself a lot of time to do that.
+* Be open to shift in your thinking.
+* Bias to describe a problem in terms of a solution you've already chosen.
+
+### Make Decisions
+
+#### Trade-offs
+
+* Compare two positive attributes of the outcomes you want.
+
+#### Building consensus
+
+* Don't block on full consensus; lack of disagreement is more important than agreement.
+
+#### Not deciding is a decision (just usually not a good one)
+
+* Decisions constrain possibilities and make it possible to make progress.
+* Remember that you don't need to make the best decision, just a good enough decision.
+
+#### Show your work
+
+* Document the decision, including the trade-offs you considered and how you got to the decision in the end.
+
+### Get Aligned and Stay Aligned
+
+#### Be Reasonable
+
+* Mention of the "Overton window".
+
+#### Nemawashi
+
+* Mention of "nemawashi"; sharing information and laying the foundations so that by the time a decision is made, there's already consensus of opinion.
+
+#### Work on your story
+
+* You want a story that is comprehensible, relatable, and comfortable.
+
+### Create the Final Draft
+
+* Not everyone will be excited to review.
+* Think about how you can make it easy to read, or share the highlights in another way.
+
+## The Launch
+
+### Make It Official
+
+### Keep It Fresh
+
+* Be prepared to revisit your document.
