@@ -144,6 +144,34 @@
   * [Design Rule 2 - No Duplication](#design-rule-2---no-duplication)
   * [Design Rule 3 - Expressive](#design-rule-3---expressive)
   * [Design Rule 4 - Minimal Classes and Methods](#design-rule-4---minimal-classes-and-methods)
+- [Concurrency](#concurrency)
+  * [Why Concurrency?](#why-concurrency-)
+  * [Myths and Misconceptions](#myths-and-misconceptions)
+  * [Challenges](#challenges)
+  * [Concurrency Defense Principles](#concurrency-defense-principles)
+    + [Single Responsibility Principle](#single-responsibility-principle)
+    + [Corollary: Limit the Scope of Data](#corollary--limit-the-scope-of-data)
+    + [Corollary: Use Copies of Data](#corollary--use-copies-of-data)
+    + [Corollary: Threads Should be as Independent as Possible](#corollary--threads-should-be-as-independent-as-possible)
+  * [Know Your Library](#know-your-library)
+    + [Thread-Safe Collections](#thread-safe-collections)
+  * [Know Your Execution Models](#know-your-execution-models)
+    + [Producer-Consumer](#producer-consumer)
+    + [Readers-Writers](#readers-writers)
+    + [Dining Philosophers](#dining-philosophers)
+  * [Beware Dependencies Between Synchronized Methods](#beware-dependencies-between-synchronized-methods)
+  * [Keep Synchronized Sections Small](#keep-synchronized-sections-small)
+  * [Writing Correct Shut-Down Code Is Hard](#writing-correct-shut-down-code-is-hard)
+  * [Testing Threaded Code](#testing-threaded-code)
+    + [Treat Spurious Failures as Candidate Threading Issues](#treat-spurious-failures-as-candidate-threading-issues)
+    + [Get Your Nonthreaded Code Working First](#get-your-nonthreaded-code-working-first)
+    + [Make Your Threaded Code Pluggable](#make-your-threaded-code-pluggable)
+    + [Make Your Threaded Code Tunable](#make-your-threaded-code-tunable)
+    + [Run with More Threads Than Processors](#run-with-more-threads-than-processors)
+    + [Run on Different Platforms](#run-on-different-platforms)
+    + [Instrument Your Code to Try and Force Failures](#instrument-your-code-to-try-and-force-failures)
+      - [Hand-Coded](#hand-coded)
+      - [Automated](#automated)
 
 # Meaningful Names
 
@@ -800,3 +828,117 @@ names and contexts carefully.
 ## Design Rule 4 - Minimal Classes and Methods
 
 * Keep overall system small while also keeping functions and class small.
+
+# Concurrency
+
+## Why Concurrency?
+
+* Concurrency is a decoupling strategy: decouple what gets done from when it gets done.
+* Concurrency improves both the throughput and the structures of an application.
+
+## Myths and Misconceptions
+
+Common myths and misconceptions:
+* Concurrency always improves performance
+* Design does not change when writing concurrent programs
+* Understanding concurrency issues is not important when working with a container such as a Web or EJB container
+
+Correct assumptions:
+* Concurrency incurs some overhead
+* Correct concurrency is complex
+* Concurrency bugs aren't usually repeatable
+* Concurrency often requires a fundamental change in design strategy.
+
+## Challenges
+
+* Example with shared class instance between two threads.
+
+## Concurrency Defense Principles
+
+### Single Responsibility Principle
+
+* Rec: Keep your concurrency-related code separate from other code.
+
+### Corollary: Limit the Scope of Data
+
+* Rec: Take data encapsulation to heart; severely limit the access of any data that may be shared.
+
+### Corollary: Use Copies of Data
+
+### Corollary: Threads Should be as Independent as Possible
+
+* Rec: Attempt to partition data into independent subsets that can be operated on by independent threads, possibly in different processors.
+
+## Know Your Library
+
+### Thread-Safe Collections
+
+* Rec: Review the classes / packages available to you.
+
+## Know Your Execution Models
+
+### Producer-Consumer
+
+* The queue / buffer between the producers and consumers is a bound resource.
+
+### Readers-Writers
+
+* Tough balancing act between throughput and starvation and accumulation of stale info.
+
+### Dining Philosophers
+
+* Philosophers = threads, forks = resources.
+* Rec: Learn the basic algorithms and understand their solutions.
+
+## Beware Dependencies Between Synchronized Methods
+
+* Rec: Avoid using more than one method on a shared object.
+* Otherwise: Client-Based Locking, Server-Based Locking, Adapted Server.
+
+## Keep Synchronized Sections Small
+
+* Rec: Keep your synchronized sections as small as possible.
+
+## Writing Correct Shut-Down Code Is Hard
+
+* Rec: Think about shut-down early and get it working early. It's going to take longer than you expect. Review existing algorithms because this is probably harder than you think.
+
+## Testing Threaded Code
+
+* Rec: Write tests that have the potential to expose problems and then run them frequently, with different programmatic configurations and system configurations and load. If tests ever fail, track down the failure. Don't ignore a failure just because the tests pass on a subsequent run.
+
+### Treat Spurious Failures as Candidate Threading Issues
+
+* Rec: Do not ignore system failures as one-offs.
+
+### Get Your Nonthreaded Code Working First
+
+* Rec: Do not try to chase down nonthreading bugs and threading bugs at the same time. Make sure your code works outside of threads.
+
+### Make Your Threaded Code Pluggable
+
+* Rec: Make your thread-based code especially pluggable so that you can run it in various configurations.
+
+### Make Your Threaded Code Tunable
+
+* Getting the right balance of threads typically requires trial and error.
+
+### Run with More Threads Than Processors
+
+* The more frequently context switching occurs, the more likely you'll encounter code that is missing a critical section or causes deadlock.
+
+### Run on Different Platforms
+
+* Rec: Run your threaded code on all target platforms early and often.
+* Note: Less applicable in the era of containerized applications.
+
+### Instrument Your Code to Try and Force Failures
+
+#### Hand-Coded
+
+* Divide system up into POJOs that know nothing of threading and classes that control the threading.
+
+#### Automated
+
+* Tools like Aspect-Oriented Framework, CGLIB, or ASM, ConTest.
+* Rec: Use jiggling strategies to ferret out errors.
