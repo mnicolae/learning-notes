@@ -84,6 +84,43 @@
   * [The Launch](#the-launch)
     + [Make It Official](#make-it-official-1)
     + [Keep It Fresh](#keep-it-fresh)
+- [Finite Time](#finite-time)
+  * [Doing All The Things](#doing-all-the-things)
+    + [Time](#time)
+      - [Finite Time](#finite-time-1)
+      - [How Busy Do You Like to Be?](#how-busy-do-you-like-to-be-)
+  * [Resource Constraints](#resource-constraints)
+    + [Your Dashboard](#your-dashboard)
+      - [Energy](#energy)
+      - [Quality of life](#quality-of-life)
+      - [Credibility](#credibility)
+      - [Social Capital](#social-capital)
+      - [Skills](#skills)
+    + [E + 2S + ... ?](#e---2s-----)
+      - [Bin packing](#bin-packing)
+  * [Choosing Projects](#choosing-projects)
+    + [Evaluating a Project](#evaluating-a-project)
+    + [What are you signing on for?](#what-are-you-signing-on-for-)
+    + [Questions to Ask Yourself About Projects](#questions-to-ask-yourself-about-projects)
+      - [Energy: How many things are you already doing?](#energy--how-many-things-are-you-already-doing-)
+      - [Energy: Does this kind of work give or take energy?](#energy--does-this-kind-of-work-give-or-take-energy-)
+      - [Energy: Are you procrastinating?](#energy--are-you-procrastinating-)
+      - [Energy: Is this fight worth it?](#energy--is-this-fight-worth-it-)
+      - [Quality of life: Do you enjoy this work?](#quality-of-life--do-you-enjoy-this-work-)
+      - [Quality of life: How do you feel about the project's goals?](#quality-of-life--how-do-you-feel-about-the-project-s-goals-)
+      - [Credibility: Does this project use your technical skills?](#credibility--does-this-project-use-your-technical-skills-)
+      - [Credibility: Does this project show your leadership skills?](#credibility--does-this-project-show-your-leadership-skills-)
+      - [Social capital: Is this the kind of work that your company and your manager expects at your level?](#social-capital--is-this-the-kind-of-work-that-your-company-and-your-manager-expects-at-your-level-)
+      - [Social capital: Will this work be respected?](#social-capital--will-this-work-be-respected-)
+      - [Social capital: Are you squandering the capital you've built?](#social-capital--are-you-squandering-the-capital-you-ve-built-)
+      - [Social capital: Will this project teach you something you want to learn?](#social-capital--will-this-project-teach-you-something-you-want-to-learn-)
+      - [Skills: Will the people around you raise your game?](#skills--will-the-people-around-you-raise-your-game-)
+  * [What If It's the Wrong Project?](#what-if-it-s-the-wrong-project-)
+    + [Do it anyway?](#do-it-anyway-)
+    + [Compensate for the project](#compensate-for-the-project)
+    + [Let others lead](#let-others-lead)
+    + [Resize the project](#resize-the-project)
+    + [Just don't do it](#just-don-t-do-it)
 
 # What Would You Say You Do Here?
 
@@ -495,3 +532,161 @@ Checklist:
 ### Keep It Fresh
 
 * Be prepared to revisit your document.
+
+# Finite Time
+
+## Doing All The Things
+
+* Resources: time, energy, quality of life, credibility, social capital, skills.
+
+### Time
+
+* Everything you commit to has an opportunity cost.
+
+#### Finite Time
+
+* Put nonmeetings in the calendar too.
+
+#### How Busy Do You Like to Be?
+
+* Know how many hours you want to work on an average week, how many you're comfortable spiking to, and at what point you'll stop being able to handle the load and fall over.
+
+## Resource Constraints
+
+### Your Dashboard
+
+* Five resources: energy, credibility, quality of life, skills, social capital.
+
+#### Energy
+
+* Understand what kinds of work are expensive for you, and what kinds will leave you with some smartbrain at the end of the day.
+
+#### Quality of life
+
+* The kind of work that you are doing and the people you are working with have a direct impact on your quality of life.
+
+#### Credibility
+
+* You won't be offered a difficult project or opportunity unless someone believes you can succeed at it.
+
+#### Social Capital
+
+* Social capital builds up over time, and you'll need more of it with some people than others.
+* You'll want to stay on good term with the people in your reporting chain and build a track record of helping them achieve their goals.
+* Invest your social capital wisely.
+
+#### Skills
+
+Increase skills in three main ways.
+* Deliberately setting out to learn something.
+* Working closely with someone who is really skilled.
+* Learning by doing.
+
+### E + 2S + ... ?
+
+#### Bin packing
+
+* Reference to [bin-packing problem](https://en.wikipedia.org/wiki/Bin_packing_problem).
+
+## Choosing Projects
+
+### Evaluating a Project
+
+* You're invited to join
+* You ask to join
+* You have an idea
+* The fire alarm goes off
+* You're claiming a problem
+* You're invited to join a grassroots effort
+* Someone needs to ...
+* You're just meddling
+
+### What are you signing on for?
+
+* Exit criteria are especially important for work that is risky or that you're not sure you should be doing at all.
+* You can reduce that risk by including formal go/no-go or retrospective points, or framing things explicitly as a timeboxed experiment.
+
+### Questions to Ask Yourself About Projects
+
+#### Energy: How many things are you already doing?
+
+* Juggling balls and choose your battles analogies.
+
+#### Energy: Does this kind of work give or take energy?
+
+#### Energy: Are you procrastinating?
+
+* Reference to [The first rule of prioritization: No snacking](https://www.intercom.com/blog/first-rule-prioritization-no-snacking).
+* Beware of the low effort, low impact quadrant.
+
+#### Energy: Is this fight worth it?
+
+* Reference to [OPP (Other People's Problems)](https://skamille.medium.com/opp-other-peoples-problems-d7eb174724ee).
+
+#### Quality of life: Do you enjoy this work?
+
+* Enough excitement vs. enough predictability.
+* Working alone vs. working with others.
+* Pair programming.
+* On-call.
+* Travel.
+* Publicly sharing what you learn (conference talks, etc.)
+* Comfortable and safe.
+
+#### Quality of life: How do you feel about the project's goals?
+
+* Value-aligned work.
+
+#### Credibility: Does this project use your technical skills?
+
+* i.e., opportunity to get down in the trenches
+
+#### Credibility: Does this project show your leadership skills?
+
+* Evaluate new projects for what kind of skills they're going to let you demonstrate and how succeeding will reflect on you.
+
+#### Social capital: Is this the kind of work that your company and your manager expects at your level?
+
+* Reference to [Managing Up](https://leaddev.com/communication-relationships/myths-and-traps-managing).
+
+#### Social capital: Will this work be respected?
+
+* Value-aligned work, but extended to peers.
+
+#### Social capital: Are you squandering the capital you've built?
+
+* Applicable to work and sponsorship.
+
+#### Social capital: Will this project teach you something you want to learn?
+
+* What stories do you want to be able to tell on your future resume?
+
+#### Skills: Will the people around you raise your game?
+
+* Reference to [Observational learning](https://en.wikipedia.org/wiki/Observational_learning).
+* Look at whether you'll work with people you'll learn something from, and people who will inspire you to do your best work.
+
+## What If It's the Wrong Project?
+
+### Do it anyway?
+
+* If you’ve been doing projects that aren’t good for you and there’s no end in sight, this is a good conversation to have with your manager.
+
+### Compensate for the project
+
+* Sometimes you have to torch the back burner.
+
+### Let others lead
+
+* A leader's job is to "aggressively delegate".
+* Reference to [The New Manager Death Spiral](https://www.youtube.com/watch?v=pAbU3WJ-NBw).
+* Do a gut check for whether someone else needs the project more.
+
+### Resize the project
+
+* If a project were interesting to you with some modifications, it's usually worth talking about that.
+
+### Just don't do it
+
+* Saying 
+* Reference to [10 ways to politely say no](https://www.indiatoday.in/education-today/grammar-vocabulary/story/10-ways-to-politely-say-no-1505465-2019-04-19) and [How to say no to a work request](https://www.askamanager.org/2015/04/how-to-say-no-to-a-work-request.html).
