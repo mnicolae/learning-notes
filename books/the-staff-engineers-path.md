@@ -121,6 +121,49 @@
     + [Let others lead](#let-others-lead)
     + [Resize the project](#resize-the-project)
     + [Just don't do it](#just-don-t-do-it)
+- [Leading Big Projects](#leading-big-projects)
+  * [The Life of a Project](#the-life-of-a-project)
+  * [The Start of a Project](#the-start-of-a-project)
+    + [If You're Feeling Overwhelmed ...](#if-you-re-feeling-overwhelmed-)
+      - [Create an anchor for yourself](#create-an-anchor-for-yourself)
+      - [Talk to your project sponsor](#talk-to-your-project-sponsor)
+      - [Decide who gets your uncertainty](#decide-who-gets-your-uncertainty)
+      - [Give yourself a win](#give-yourself-a-win)
+      - [Use your strengths](#use-your-strengths)
+    + [Building Context](#building-context)
+      - [Goals](#goals)
+      - [Customer needs](#customer-needs)
+      - [Success metrics](#success-metrics)
+      - [Sponsors, stakeholders, and customers](#sponsors--stakeholders--and-customers)
+      - [Fixed constraints](#fixed-constraints)
+      - [Risks](#risks)
+      - [History](#history)
+      - [Team](#team)
+    + [Giving Your Project Structure](#giving-your-project-structure)
+      - [Defining roles](#defining-roles)
+      - [Recruiting people](#recruiting-people)
+      - [Agreeing on scope](#agreeing-on-scope)
+      - [Estimating time](#estimating-time)
+      - [Agreeing on logistics](#agreeing-on-logistics)
+  * [Driving the Project](#driving-the-project)
+    + [Exploring](#exploring)
+      - [What are the important aspects of the project?](#what-are-the-important-aspects-of-the-project-)
+      - [What possible approaches can you take?](#what-possible-approaches-can-you-take-)
+    + [Clarifying](#clarifying)
+      - [Mental models](#mental-models)
+      - [Naming](#naming)
+      - [Pictures and graphs](#pictures-and-graphs)
+    + [Designing](#designing)
+      - [Why share designs?](#why-share-designs-)
+      - [What goes in an RFC?](#what-goes-in-an-rfc-)
+      - [Technical pitfalls](#technical-pitfalls)
+  * [Coding](#coding)
+    + [Should you code on the project?](#should-you-code-on-the-project-)
+    + [Be an exemplar, but not a bottleneck](#be-an-exemplar--but-not-a-bottleneck)
+  * [Communicating](#communicating)
+    + [Talking to each other](#talking-to-each-other)
+    + [Sharing status](#sharing-status)
+  * [Navigating](#navigating)
 
 # What Would You Say You Do Here?
 
@@ -690,3 +733,219 @@ Increase skills in three main ways.
 
 * Saying 
 * Reference to [10 ways to politely say no](https://www.indiatoday.in/education-today/grammar-vocabulary/story/10-ways-to-politely-say-no-1505465-2019-04-19) and [How to say no to a work request](https://www.askamanager.org/2015/04/how-to-say-no-to-a-work-request.html).
+
+# Leading Big Projects
+
+## The Life of a Project
+
+## The Start of a Project
+
+### If You're Feeling Overwhelmed ...
+
+* It is normal to feel overwhelmed when you're beginning a project.
+* It takes time and energy to build the mental maps that let you navigate it all.
+* Mention of impostor syndrome.
+* Possible signal of being low on energy, time, skills. Think about ways to increase the levels of these resources.
+* The difficulty and the ambiguity are the nature of the work.
+
+#### Create an anchor for yourself
+
+* Create a document, just for me, that's going to act as an external part of my brain for the duration of the project.
+
+#### Talk to your project sponsor
+
+* Meet with project sponsor with a written description of what you think they are hoping to achieve from the project and what success looks like. Confirm you are on the right track, or write down clarified ambiguity.
+* Clarify what your role will be and who you should bring project updates to.
+
+#### Decide who gets your uncertainty
+
+* Try to find at least one person who you can be open and unsure with; your manager, a mentor, or a peer.
+* Choose a sounding board who will listen, validate, and say "Yes, this stuff is hard for me too". Be that person for them or others too.
+
+#### Give yourself a win
+
+* If the problem is still too big, aim to take a step, any step, that helps you exert some control over it.
+
+#### Use your strengths
+
+* You're going to want to pour a lot of information into your brain as efficiently as possible, so your core muscles. Be it coding, talking to people, reading documents.
+
+### Building Context
+
+#### Goals
+
+* Out of all the possible business goals, technical investments, pending tasks, why is this the one that's happening?
+* The "why" is going to be a motivator and a guide throughout the project.
+
+#### Customer needs
+
+* If you don't understand what your customers need, you're not going to build the right thing.
+* Budget time to figure that out.
+* Reference to [Working with Product Managers: Advice from PMs](https://newsletter.pragmaticengineer.com/p/working-with-product-managers-advice-from-pms).
+
+#### Success metrics
+
+* Mention of product requirements document (PRD).
+* Make sure sponsor and other leads agree on them.
+
+#### Sponsors, stakeholders, and customers
+
+* Clarify for yourself who your first customer or main stakeholder is, what they're hoping to see from you, and when.
+
+#### Fixed constraints
+
+* Usually you're going to be constrained in some ways: understand what those constraints are.
+* Describe the reality of the situation you're in, so you won't spend all your time being mad at reality not being as you wish it to be.
+
+#### Risks
+
+* Try to predict some of the risks. What could happen that could prevent you from your goals on deadline?
+
+#### History
+
+* Don't just jump in.
+* Have a lot of conversations.
+* Find out what half-built systems you're going to have to use, work around, or clean up before you can start creating a new solution.
+* Understand people's feelings and expectations, and learn from their experiences.
+* Reference to Amazon's tenet to ["Respect what came before"](https://www.amazon.jobs/en/landing_pages/pe-community-tenets).
+
+#### Team
+
+* Don't waste your time in power struggles.
+* Understand who the leaders are, how they're involved in the project, and what role they expect to play.
+
+### Giving Your Project Structure
+
+#### Defining roles
+
+* Create a table of leadership responsibilities and lay out who should take on each one.
+* Try to get every leader aligned on what your roles are and who's doing what.
+
+#### Recruiting people
+
+* If there are unfilled roles that you don't want to do or don't have time to do, you may have to find someone else to do them.
+
+#### Agreeing on scope
+
+* "Fast, cheap, good: Pick two".
+* If you have multiple use cases or features, you'll want to deliver incremental value along the way. So decide what you're doing first, set a milestone, and put a date beside it.
+* Make the increments small enough that there's always a milestone in sight: it's motivational to have a goal that feels reachable.
+* If the project is big enough, you might split the work into work streams, chunks of functionality that can be created in parallel, each with its own set of milestones.
+* You might also describe different phases, where you complete a huge piece of work, reorient, and then kick off the next stage of the project.
+
+#### Estimating time
+
+* Reference to [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/).
+* Estimating time needs to include thinking about teams you depend on.
+
+#### Agreeing on logistics
+
+* When, where, and how you'll meet
+* How you'll encourage informal communication
+* How you'll all share status
+* Where the documentation home will be
+* What your development practices will be
+
+## Driving the Project
+
+### Exploring
+
+* If you're creating a design where it's difficult to articulate the goals (or if the goals are just a description of your implementation!), that's a sign you haven't spent enough time in this exploration stage.
+
+#### What are the important aspects of the project?
+
+* Aligning and framing the problem can take time and effort.
+* Exploring helps you form an elevator pitch about the project, a way to sum it up and reduce it to its most important aspects.
+
+#### What possible approaches can you take?
+
+* Once you have a clear story for what you're trying to do, only then figure out how to do it.
+* Be open to existing solutions too, and learn from their history.
+
+### Clarifying
+
+* As the project lead, you have an incentive to spend time understanding the tricky concepts if it helps you achieve your project. But the people you ask for help have a different focus and may not try as hard. Unless you take the time to reduce the complexity for them, they could end up thinking about the project in a way that leads them to optimize for the wrong outcome or muddy a clear story you're trying to tell your organization.
+* Reference to [The Art of Travel](https://www.litcharts.com/lit/the-art-of-travel/summary).
+
+#### Mental models
+
+* Connecting an abstract idea back to something I understand well removes some cognitive cost of retaining and describing the idea.
+* We can build abstractions to let us work with ideas.
+* Help others build mental models by providing convenient, memorable name for the concept, using an analogy, or connecting it back to something they already understand.
+
+#### Naming
+
+* Reference to [Domain-Driven Design](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) and `ubiquitous language`.
+
+#### Pictures and graphs
+
+* There is no easier way to help people visualize what you're talking about than with pictures, graphs or charts.
+
+### Designing
+
+* You'll need to make sure everyone is aligned. The most efficient way to do that is to write things down.
+
+#### Why share designs?
+
+* Include the most important aspects of the plan, and let other people get in touch with you if they see hazards in your path.
+* Validate the feasibility of an architecture or a series of steps; includes agreeing on whether you are solving the right problem at all and whether your assumptions about the other teams and existing systems are correct.
+
+#### What goes in an RFC?
+
+* Context. Include status (early idea, open for detailed review, etc.).
+* Goals. Explain why we are doing this at all; show what opportunity you're trying to solve or what opportunity you're trying to take advantage of. Should not include implementation details. The specific implementation should serve the goal; it should not be the goal.
+* Design. Lays out how you intend to achieve the goal. At the end, your readers should understand what you intend to do and should be able to tell you whether they think it will work. Reference to ["What I Think About When I Edit"](https://evaparish.com/blog/how-i-edit).
+* Security/privacy/compliance.
+* Alternatives considered/prior art.
+* Background.
+* Trade-offs.
+* Risks.
+* Dependencies.
+* Operations.
+
+#### Technical pitfalls
+
+* It's a brand-new problem (but it isn't)
+* This looks easy!
+* Building for the present
+* Building for the distant, distant future
+* Every user just needs to... Any part of your solution that involves humans changing their workflows or behavior will be difficult and needs to be part of the design.
+* We'll figure out the difficult part later
+* Solving the small problem by making the big problem more difficult
+* It's not really a rewrite (but it is!)
+* But is it operable?
+* Discussing the smallest decisions the most
+
+## Coding
+
+### Should you code on the project?
+
+* Reference to [Should Staff+ Engineers Be Writing Code?](https://jkebertz.medium.com/should-staff-engineers-be-writing-code-1237abf891f4).
+* Avoid snacking.
+
+### Be an exemplar, but not a bottleneck
+
+* If you're coding, try to pick work that's not time-sensitive or on the critical path.
+* Reference to [99 Bottles of OOP](https://sandimetz.com/99bottles).
+* Analogy of "scouting and cartography".
+* Find opportunities for other people to grow, by chatting over the details or pair programming on the change.
+* Whatever you do will set expectations for the team.
+
+## Communicating
+
+* Communicating well is key for delivering a project in time.
+
+### Talking to each other
+
+* Find opportunities for your team members to talk with each other regularly and build relationships.
+* Goals are to make team members comfortable to disagree without it getting tense and ask clarifying questions.
+
+### Sharing status
+
+* Make it easy to find out what's going on, and set expectations about when you'll reach various milestones.
+* Explain your status in terms of impact and what the audience will actually want to know.
+* Analogy of watermelon project.
+
+## Navigating
+
+* Expect problems to arise. Make plans accordingly.
