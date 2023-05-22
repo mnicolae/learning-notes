@@ -164,6 +164,52 @@
     + [Talking to each other](#talking-to-each-other)
     + [Sharing status](#sharing-status)
   * [Navigating](#navigating)
+- [Why Have We Stopped](#why-have-we-stopped)
+  * [The Project Isn't Moving - Should It Be?](#the-project-isn-t-moving---should-it-be-)
+    + [You're Stuck in Traffic](#you-re-stuck-in-traffic)
+    + [Blocked by Another Team](#blocked-by-another-team)
+      - [What's going on?](#what-s-going-on-)
+      - [Navigating the dependency](#navigating-the-dependency)
+    + [Blocked by a Decision](#blocked-by-a-decision)
+      - [What's going on?](#what-s-going-on--1)
+      - [Navigating the unmade decision](#navigating-the-unmade-decision)
+    + [Blocked by a Single $%@$% Button Click](#blocked-by-a-single-------button-click)
+      - [What's going on?](#what-s-going-on--2)
+      - [Navigating the un-clicked button](#navigating-the-un-clicked-button)
+    + [Blocked by a Single Person](#blocked-by-a-single-person)
+      - [What's going on?](#what-s-going-on--3)
+      - [Navigating a colleague who isn't doing the work](#navigating-a-colleague-who-isn-t-doing-the-work)
+    + [Blocked by Unassigned Work](#blocked-by-unassigned-work)
+      - [What's going on?](#what-s-going-on--4)
+      - [Navigating the unassigned work](#navigating-the-unassigned-work)
+    + [Blocked by a Huge Crowd of People](#blocked-by-a-huge-crowd-of-people)
+      - [What's going on?](#what-s-going-on--5)
+      - [Navigating the half-finished migration](#navigating-the-half-finished-migration)
+  * [You're Lost](#you-re-lost)
+    + [You Don't Know Where You're All Going](#you-don-t-know-where-you-re-all-going)
+      - [What's going on?](#what-s-going-on--6)
+      - [Choosing a destination](#choosing-a-destination)
+    + [You Don't Know How to Get There](#you-don-t-know-how-to-get-there)
+      - [What's going on?](#what-s-going-on--7)
+      - [Finding the way](#finding-the-way)
+    + [You Don't Know Where You Stand](#you-don-t-know-where-you-stand)
+      - [What's going on?](#what-s-going-on--8)
+      - [Getting back on solid ground](#getting-back-on-solid-ground)
+  * [You Have Arrived ... Somewhere?](#you-have-arrived--somewhere-)
+    + [But it is Code Complete!](#but-it-is-code-complete-)
+      - [What's going on?](#what-s-going-on--9)
+      - [Making sure the user can catch a Pokemon](#making-sure-the-user-can-catch-a-pokemon)
+    + [It's Done but Nobody Is Using It](#it-s-done-but-nobody-is-using-it)
+      - [What's going on?](#what-s-going-on--10)
+      - [Selling it](#selling-it)
+    + [It's Built on a Shaky Foundation](#it-s-built-on-a-shaky-foundation)
+      - [What's going on?](#what-s-going-on--11)
+      - [Shoring up the foundations](#shoring-up-the-foundations)
+    + [The Project Just Stops Here](#the-project-just-stops-here)
+      - [This is a better place to stop](#this-is-a-better-place-to-stop)
+      - [It's not the right journey to take](#it-s-not-the-right-journey-to-take)
+      - [The project has been canceled](#the-project-has-been-canceled)
+    + [This is the destination!](#this-is-the-destination-)
 
 # What Would You Say You Do Here?
 
@@ -768,7 +814,7 @@ Increase skills in three main ways.
 
 #### Use your strengths
 
-* You're going to want to pour a lot of information into your brain as efficiently as possible, so your core muscles. Be it coding, talking to people, reading documents.
+* You're going to want to pour a lot of information into your brain as efficiently as possible, so use your core muscles. Be it coding, talking to people, reading documents.
 
 ### Building Context
 
@@ -799,7 +845,7 @@ Increase skills in three main ways.
 
 #### Risks
 
-* Try to predict some of the risks. What could happen that could prevent you from your goals on deadline?
+* Try to predict some risks. What could happen that could prevent you from your goals on deadline?
 
 #### History
 
@@ -836,7 +882,7 @@ Increase skills in three main ways.
 #### Estimating time
 
 * Reference to [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/).
-* Estimating time needs to include thinking about teams you depend on.
+* Estimating time needs to include thinking about teams you depend on. Talk with the teams you'll need as early as possible, and understand their availability.
 
 #### Agreeing on logistics
 
@@ -847,6 +893,8 @@ Increase skills in three main ways.
 * What your development practices will be
 
 ## Driving the Project
+
+Reference to [Avoid the Lake](https://leaddev.com/agile-other-ways-working/avoid-lake).
 
 ### Exploring
 
@@ -893,7 +941,7 @@ Increase skills in three main ways.
 #### What goes in an RFC?
 
 * Context. Include status (early idea, open for detailed review, etc.).
-* Goals. Explain why we are doing this at all; show what opportunity you're trying to solve or what opportunity you're trying to take advantage of. Should not include implementation details. The specific implementation should serve the goal; it should not be the goal.
+* Goals. Explain why we are doing this at all; show what problem you're trying to solve or what opportunity you're trying to take advantage of. Should not include implementation details. The specific implementation should serve the goal; it should not be the goal.
 * Design. Lays out how you intend to achieve the goal. At the end, your readers should understand what you intend to do and should be able to tell you whether they think it will work. Reference to ["What I Think About When I Edit"](https://evaparish.com/blog/how-i-edit).
 * Security/privacy/compliance.
 * Alternatives considered/prior art.
@@ -905,7 +953,7 @@ Increase skills in three main ways.
 
 #### Technical pitfalls
 
-* It's a brand-new problem (but it isn't)
+* It's a brand-new problem (but it isn't). Don't miss the opportunity to learn from other people, and consider reusing existing solutions.
 * This looks easy!
 * Building for the present
 * Building for the distant, distant future
@@ -949,3 +997,156 @@ Increase skills in three main ways.
 ## Navigating
 
 * Expect problems to arise. Make plans accordingly.
+
+# Why Have We Stopped
+
+## The Project Isn't Moving - Should It Be?
+
+* As a leader in your organization, you can help projects that you're not leading too. Reference to [Work on What Matters](https://staffeng.com/guides/work-on-what-matters/).
+* Choose the opportunities where your help is most valuable, and then take deliberate action, with a plan for stepping away again afterward.
+* Techniques: 1. understand and explain, 2. make the work easier, 3. get organizational support, 4. make alternative plans
+
+### You're Stuck in Traffic
+
+### Blocked by Another Team
+
+#### What's going on?
+
+* Misunderstandings
+* Misadventure
+* Misalignment
+
+#### Navigating the dependency
+
+### Blocked by a Decision
+
+#### What's going on?
+
+* Mention of different contexts and different domain languages when working with non-engineers.
+
+#### Navigating the unmade decision
+
+### Blocked by a Single $%@$% Button Click
+
+#### What's going on?
+
+* "lack of planning on your part is not an emergency on mine"
+* Bear in min that other teams often take on accountability when they give approval.
+
+#### Navigating the un-clicked button
+
+### Blocked by a Single Person
+
+#### What's going on?
+
+* The reasons your colleague gives you for being blocked aren't necessarily the real ones.
+
+#### Navigating a colleague who isn't doing the work
+
+* Reassure them what they're working on is legitimately difficult but learnable. Help them, but try not to take over. Ask questions, answer questions, and help them find their way.
+
+### Blocked by Unassigned Work
+
+#### What's going on?
+
+* An example of plate tectonics problem.
+
+#### Navigating the unassigned work
+
+* Reference to [the art of the rollup](https://twitter.com/deniseyu21/status/1357832805653356546).
+
+### Blocked by a Huge Crowd of People
+
+#### What's going on?
+
+#### Navigating the half-finished migration
+
+## You're Lost
+
+### You Don't Know Where You're All Going
+
+#### What's going on?
+
+#### Choosing a destination
+
+* Clarify roles.
+* Choose a strategy. Until you all agree on exactly what problem you're solving, nobody is allowed to discuss implementation details. Pick a small number of challenges, and leave the other real problems unsolved for now.
+* Choose a problem.
+* Choose a stakeholder. Aim to solve in "vertical slices".
+
+### You Don't Know How to Get There
+
+#### What's going on?
+
+#### Finding the way
+
+* Articulate the problem
+* Revisit your assumptions
+* Give it time
+* Increase your capacity
+* Look for prior art
+* Learn from other people
+* Try a different angle
+* Start smaller
+* Ask for help. Coworkers, mentors, or local experts.
+
+### You Don't Know Where You Stand
+
+#### What's going on?
+
+#### Getting back on solid ground
+
+* Clarify organizational support
+* Clarify roles
+* Ask for what you need
+* Refuel
+
+## You Have Arrived ... Somewhere?
+
+### But it is Code Complete!
+
+#### What's going on?
+
+* The want to catch a Pokémon analogy.
+
+#### Making sure the user can catch a Pokemon
+
+* Define "done"
+* Be your own user. Reference to dogfooding.
+* Celebrate landings, not launches.
+
+### It's Done but Nobody Is Using It
+
+#### What's going on?
+
+#### Selling it
+
+* Reference to [Why Marketing Matters](https://www.youtube.com/watch?v=hykHdV0So6M).
+* Tell people.
+* Make it discoverable
+
+### It's Built on a Shaky Foundation
+
+#### What's going on?
+
+#### Shoring up the foundations
+
+* Set a culture of quality.
+* Make the foundational work a user story.
+* Negotiate for engineer-led time.
+
+### The Project Just Stops Here
+
+#### This is a better place to stop
+
+#### It's not the right journey to take
+
+* Mention of sunk cost fallacy.
+
+#### The project has been canceled
+
+### This is the destination!
+
+* Take the time to mark the occasion and make your success feel special.
+* Consider a retro.
+* Celebrate aspects of your culture that you most appreciate.
