@@ -210,6 +210,55 @@
       - [It's not the right journey to take](#it-s-not-the-right-journey-to-take)
       - [The project has been canceled](#the-project-has-been-canceled)
     + [This is the destination!](#this-is-the-destination-)
+- [You're a Role Model Now (Sorry)](#you-re-a-role-model-now--sorry-)
+  * [What Does It Mean to do a good job?](#what-does-it-mean-to-do-a-good-job-)
+    + [Values Are What You Do](#values-are-what-you-do)
+    + [But I Don't Want to be a Role Model!](#but-i-don-t-want-to-be-a-role-model-)
+  * [What Does it Mean to Do a Good Job as a Senior Engineer?](#what-does-it-mean-to-do-a-good-job-as-a-senior-engineer-)
+    + [Be Competent](#be-competent)
+    + [Know Things](#know-things)
+      - [Build experience](#build-experience)
+      - [Build domain knowledge](#build-domain-knowledge)
+      - [Stay up to date](#stay-up-to-date)
+    + [Be Self-Aware](#be-self-aware)
+      - [Admit what you know](#admit-what-you-know)
+    + [Have High Standards](#have-high-standards)
+      - [Seek out constructive criticism](#seek-out-constructive-criticism)
+      - [Own your mistakes](#own-your-mistakes)
+      - [Be reliable](#be-reliable)
+    + [Be Responsible](#be-responsible)
+    + [Take Ownership](#take-ownership)
+      - [Make decisions](#make-decisions)
+      - [Ask "obvious" questions](#ask--obvious--questions)
+      - [Don't delegate through neglect](#don-t-delegate-through-neglect)
+    + [Take Charge](#take-charge)
+      - [Step up in an emergency](#step-up-in-an-emergency)
+      - [Ask for more information when everyone is confused](#ask-for-more-information-when-everyone-is-confused)
+      - [Drive meetings](#drive-meetings)
+      - [If you see something, say something](#if-you-see-something--say-something)
+    + [Create Calm](#create-calm)
+      - [Defuse, don't amplify](#defuse--don-t-amplify)
+      - [Avoid blame](#avoid-blame)
+      - [Be consistent](#be-consistent)
+  * [Remember the Goal](#remember-the-goal)
+    + [Remember There's a Business](#remember-there-s-a-business)
+      - [Adapt to the situation](#adapt-to-the-situation)
+      - [Be aware that there's a budget](#be-aware-that-there-s-a-budget)
+      - [Spend resources mindfully](#spend-resources-mindfully)
+  * [Remember There's a User](#remember-there-s-a-user)
+  * [Remember There's a Team](#remember-there-s-a-team)
+  * [Look ahead](#look-ahead)
+    + [Anticipate What You'll Wish You'd Done](#anticipate-what-you-ll-wish-you-d-done)
+      - [Telegraph what's coming](#telegraph-what-s-coming)
+      - [Tidy up](#tidy-up)
+      - [Keep your tools sharp](#keep-your-tools-sharp)
+      - [Create institutional memory](#create-institutional-memory)
+    + [Expect Failure](#expect-failure)
+    + [Optimize for Maintenance, Not Creation](#optimize-for-maintenance--not-creation)
+      - [Make it understandable](#make-it-understandable)
+      - [Keep it simple](#keep-it-simple)
+      - [Build to decommission](#build-to-decommission)
+    + [Create Future Leaders](#create-future-leaders)
 
 # What Would You Say You Do Here?
 
@@ -1150,3 +1199,186 @@ Reference to [Avoid the Lake](https://leaddev.com/agile-other-ways-working/avoid
 * Take the time to mark the occasion and make your success feel special.
 * Consider a retro.
 * Celebrate aspects of your culture that you most appreciate.
+
+# You're a Role Model Now (Sorry)
+
+## What Does It Mean to do a good job?
+
+### Values Are What You Do
+
+* Engineering goes beyond what you do when you're talking to computer systems; it's also how you talk to humans.
+
+### But I Don't Want to be a Role Model!
+
+* Be the best engineer and the best colleague that you can be.
+
+## What Does it Mean to Do a Good Job as a Senior Engineer?
+
+* Be competent.
+* Be a responsible adult.
+* Remember the goal.
+* Look ahead.
+
+### Be Competent
+
+### Know Things
+
+* You can't be a technical leader without the "technical" part.
+* Your big-picture thinking, project execution, credibility, and influence are underpinned by knowledge and experience.
+
+#### Build experience
+
+* Experience comes through time, exposure, and study.
+* It takes time. Invest time - lots of time in honing your technical skills.
+* There is no substitute for working through problems, learning your own techniques for solving them, and seeing what works and what doesn't.
+* Staff engineers have at least 10 YOE. Don't rush past your prime learning years.
+
+#### Build domain knowledge
+
+* When you move into a new technology area or business domain, be deliberate about learning quickly.
+
+#### Stay up to date
+
+* Growth mindset and drive to improve.
+* Stay engaged with what's happening in your part of the industry.
+* Show that you're learning. Be open about what you're learning, and show how you're doing it.
+
+### Be Self-Aware
+
+* The self-awareness to know what you can do, how long it will take, and what you don't know.
+* Having well-founded confidence that you'll be able to solve the problem.
+
+#### Admit what you know
+
+* Aim to get to a level where you're confident and honest with yourself about what you know and what you don't.
+
+### Have High Standards
+
+* Know what high-quality work looks like and aim for that standard in everything you do.
+
+#### Seek out constructive criticism
+
+* Look for opportunities to put aside your ego and ask someone else to help make your work better.
+* Ask for code review, design review, and peer evaluations.
+
+#### Own your mistakes
+
+* Mention of retrospectives.
+* Benefits are retaining the goodwill and social capital of your team and boosting the team's psychological safety.
+
+#### Be reliable
+
+* Be the sort of person who is trusted to get it done well.
+
+### Be Responsible
+
+### Take Ownership
+
+* Reference to [Cover YOur Ass Engineering (CYAE)](https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/).
+* Reference to [Radiating Intent](https://medium.com/@ElizAyer/dont-ask-forgiveness-radiate-intent-d36fd22393a3).
+
+#### Make decisions
+
+#### Ask "obvious" questions
+
+* You have a responsibility to make the implicit explicit.
+
+#### Don't delegate through neglect
+
+* Reference to [glue work](https://noidea.dog/glue).
+* If glue work is needed for your organization or your project, recognize it and understand who is doing it.
+* Take ownership and do a lot of the work that’s not anybody’s job but that furthers your goals.
+
+### Take Charge
+
+#### Step up in an emergency
+
+* Reference to [Incident Command System](https://increment.com/reliability/technical-incident-command/).
+
+#### Ask for more information when everyone is confused
+
+* During an emergency, you'll often need to admit what you don't know and ask obvious questions.
+
+#### Drive meetings
+
+* Make sure there is an agenda and meeting notes.
+
+#### If you see something, say something
+
+### Create Calm
+
+#### Defuse, don't amplify
+
+* Be especially clear in one-on-ones about whether you're asking for action, unpacking something for yourself, or sharing context.
+
+#### Avoid blame
+
+* If someone made a mistake or discovered an edge case by breaking something, create an environment where everyone will feel safe talking through the event.
+
+#### Be consistent
+
+* Create a sense of safety and calm by being consistent and predictable.
+* It's harder to be consistent when you're stressed out or working beyoned your capacity.
+
+## Remember the Goal
+
+### Remember There's a Business
+
+#### Adapt to the situation
+
+* As the business changes, your priorities will change. Be OK with that.
+
+#### Be aware that there's a budget
+
+* Bear that in mind when you're deciding what to suggest your organization spends time on.
+
+#### Spend resources mindfully
+
+* Reference to [Choose boring technology](https://boringtechnology.club/).
+
+## Remember There's a User
+
+* Be clear about the exact requirements you're creating for, and share those requirements broadly.
+* Get the proposed API reviewed before you start the code.
+* Show a mockup of the user interface before you start creating it.
+* Check in frequently and show updates.
+
+## Remember There's a Team
+
+* Don't become a single point of failure where the team can't get anything done when you're not available.
+* It's not sustainable and creates problems.
+
+## Look ahead
+
+### Anticipate What You'll Wish You'd Done
+
+#### Telegraph what's coming
+
+* Be clear about what your broad direction is, even if you don't know the details yet.
+
+#### Tidy up
+
+#### Keep your tools sharp
+
+* Continually invest in making your environment better.
+
+#### Create institutional memory
+
+### Expect Failure
+
+* Reference to [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing).
+
+### Optimize for Maintenance, Not Creation
+
+#### Make it understandable
+
+#### Keep it simple
+
+* The longer the system is intended to last, the longer you should spend trying to make it as simple as you can.
+
+#### Build to decommission
+
+### Create Future Leaders
+
+* Reference to [On Being a Senior Engineer](https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/).
+* The metric for success is whether other people want to work with you.
