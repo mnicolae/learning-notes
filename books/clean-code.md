@@ -172,6 +172,22 @@
     + [Instrument Your Code to Try and Force Failures](#instrument-your-code-to-try-and-force-failures)
       - [Hand-Coded](#hand-coded)
       - [Automated](#automated)
+- [Successive Refinement](#successive-refinement)
+  * [Args Implementation](#args-implementation)
+    + [How did I do this?](#how-did-i-do-this-)
+  * [Args: The Rough Draft](#args--the-rough-draft)
+    + [So I Stopped](#so-i-stopped)
+    + [On Incrementalism](#on-incrementalism)
+  * [String Arguments](#string-arguments)
+  * [Conclusion](#conclusion)
+- [Smells and Heuristics](#smells-and-heuristics)
+  * [Comments](#comments-1)
+  * [Environment](#environment)
+  * [Functions](#functions-1)
+  * [General](#general)
+  * [Java](#java)
+  * [Names](#names)
+  * [Tests](#tests)
 
 # Meaningful Names
 
@@ -728,6 +744,7 @@ names and contexts carefully.
 * A class or module should have one, and only one, reason to change.
 * Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code.
 * We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors.
+* Tools and toolboxes analogy.
 
 ## Cohesion
 
@@ -942,3 +959,122 @@ Correct assumptions:
 
 * Tools like Aspect-Oriented Framework, CGLIB, or ASM, ConTest.
 * Rec: Use jiggling strategies to ferret out errors.
+
+# Successive Refinement
+
+## Args Implementation
+
+Note: this chapter is particularly difficult to read because it contains a lot of code.
+
+### How did I do this?
+
+* To write clean code, you must first write dirty code and then clean it.
+
+## Args: The Rough Draft
+
+### So I Stopped
+
+* `ArgumentMarshaller`.
+
+### On Incrementalism
+
+* Discipline of Test-Driven Development (TDD).
+
+## String Arguments
+
+* Putting things in so that you can take them out again is pretty common in refactoring. Rubik's cube analogy.
+* Much of good software design is simply about partitioning -- creating appropriate places to put different kinds of code. This separation of concerns makes the code much simpler to understand and maintain.
+
+## Conclusion
+
+* Bad schedules can be redone, bad requirements can be redefined. Bad team dynamics can be repaired. But bad code rots and ferments.
+
+# Smells and Heuristics
+
+## Comments
+
+* C1: Inappropriate Information.
+* C2: Obsolete Comment.
+* C3: Redundant Comment.
+* C4: Poorly Written Comment.
+* C5: Commented-Out Code.
+
+## Environment
+
+* E1: Build Requires More Than One Step
+* E2: Tests Require More Than One Step
+
+## Functions
+
+* F1: Too Many Arguments
+* F2: Output Arguments
+* F3: Flag Arguments
+* F4: Dead Function
+
+## General
+
+* G1: Multiple Languages in One Source File
+* G2: Obvious Behavior is Unimplemented. Mention of "The Principle of Least Surprise".
+* G3: Incorrect Behavior at the Boundaries.
+* G4: Overriden Safeties.
+* G5: Duplication. Mention of DRY principle. Duplication is a missed opportunity for abstraction. Mention of polymorphism. Mention of template method, strategy pattern.
+* G6: Code at Wrong Level of Abstraction.
+* G7: Base Classes Depending on Their Derivatives.
+* G8: Too Much Information.
+* G9: Dead Code.
+* G10: Vertical Separation.
+* G11: Inconsistency.
+* G12: Clutter.
+* G13: Artificial Coupling.
+* G14: Feature Envy. Eliminate Feature Envy because it exposes the internals of one class to another.
+* G15: Selector Arguments. Better to have many functions than to pass some code into a function to select the behavior.
+* G16: Obscured Intent.
+* G17: Misplaced Responsibility.
+* G18: Inappropriate Static. In general, you should prefer nonstatic methods to static methods.
+* G19: Use Explanatory Variables
+* G20: Function Names Should Say What They Do
+* G21: Understand the Algorithm
+* G22: Make Logical Dependencies Physical
+* G23: Prefer Polymorphism to If/Else or Switch/Case
+* G24: Follow Standard Conventions
+* G25: Replace Magic Numbers with Named Constants
+* G26: Be Precise. Ambiguities and imprecision in code are either a result of disagreements or laziness. In either case they should be eliminated.
+* G27: Structure over Convention. Enforce design decisions with structure over convention.
+* G28: Encapsulate Conditionals.
+* G29: Avoid Negative Conditionals.
+* G30: Functions Should Do One Thing
+* G31: Hidden Temporal Couplings. Structure the arguments of your functions such that the order in which they should be called is obvious.
+* G32: Don't Be Arbitrary.
+* G33: Encapsulate Boundary Conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.
+* G34: Functions Should Descend Only One Level of Abstraction.
+* G35: Keep Configurable Data at High Levels
+* G36: Avoid Transitive Navigation. The Law of Demeter.
+
+## Java
+
+* J1: Avoid Long Import Lists by Using Wildcards.
+* J2: Don't Inherit Constants. Mention of static import.
+* J3: Constants versus Enums.
+
+## Names
+
+* N1: Choose Descriptive Names
+* N2: Choose Names at the Appropriate Level of Abstraction
+* N3: Use Standard Nomenclature Where Possible
+* N4: Unambiguous Names
+* N5: Use Long Names for Long Scopes
+* N6: Avoid Encodings
+* N7: Names Should Describe Side Effects
+
+## Tests
+
+* T1: Insufficient Tests
+* T2: Use a Coverage Tool!
+* T3: Don't Skip Trivial Tests
+* T4: An Ignored Test Is a Question about an Ambiguity
+* T5: Test Boundary Conditions
+* T6: Exhaustively Test Near Bugs
+* T7: Patterns of Failure Are Revealing
+* T8: Test Coverage Patterns Can Be Revealing
+* T9: Tests Should Be Fast
+
